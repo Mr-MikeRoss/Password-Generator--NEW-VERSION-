@@ -5,7 +5,12 @@ let snOnEl = document.getElementById("sn-on")
 let snOffEl = document.getElementById("sn-off")
 let snState = true
 
+
 //functions
+if (snState) {
+    snOn()
+}
+
 function snOn() {
     snState = true
     snOnEl.style.background = "#10B981";
