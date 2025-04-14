@@ -9,11 +9,17 @@
                 <h1>Generate a</h1>
                 <h1 class="green-style">random password</h1>
                 <p>Never use an insecure password again.</p>
-                <button id="password-btn">Generate passwords</button>
+                <div class="option-btns">
+                    <button id="password-btn" class="btn-style" onclick="generatePassword()">Generate passwords</button>
+                    <div class="symbol-number-btn">
+                        <button class="sn-btn-style" id="sn-on" onclick="snOn()">Symbols/Numbers On</button>
+                        <button class="sn-btn-style" id="sn-off" onclick="snOff()">Symbols/Numbers Off</button>
+                    </div>
+                </div>
             </div>
             <div class="generated-passwords">
-                <button class="generated-btn">123671825361728</button>
-                <button class="generated-btn">102938475647382</button>
+                <button class="generated-btn" id="password-one"></button>
+                <button class="generated-btn" id="password-two"></button>
             </div>
         </div>
         <script src="index.js"></script>
