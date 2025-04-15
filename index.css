@@ -57,7 +57,8 @@ body {
 
 .generated-btn {
     width: 215px;
-    height: 40px;
+    height: 20px;
+    padding: 10px 5px;
     font-size: 15px;
     border-radius: 5px;
     border: none;
@@ -85,3 +86,8 @@ body {
     background: #273549;
 }
 
+#cool-hint {
+    margin-top: 30px;
+    font-size: 17px;
+    color: #D5D4D8;
+}

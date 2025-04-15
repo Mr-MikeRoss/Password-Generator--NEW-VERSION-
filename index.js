@@ -55,6 +55,29 @@ function generatePassword() {
         }  
     }
 }
+ 
+//copy function
+passwordOneEl.onclick = function() {
+    document.execCommand("copy")
+}
+
+passwordTwoEl.onclick = function() {
+    document.execCommand("copy")
+}
+
+passwordOneEl.addEventListener("copy", function(event) {
+    event.preventDefault()
+    if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", passwordOneEl.textContent)
+    }
+})
+
+passwordTwoEl.addEventListener("copy", function(event) {
+    event.preventDefault()
+    if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", passwordTwoEl.textContent)
+    }
+})
 
 
 
